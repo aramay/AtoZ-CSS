@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+  <style>
+    .container{
+        /*position: relative;*/
+        height: 400px;
+        border: 1px solid #999;
+        background: #e4c9c9;
+
+        /*cuz the box is in-line block, it can be centered horizontally with text-align center property*/
+        text-align: center;
+
+
+    }
+
+    /*invisble pesudo element*/
+    .container::before{
+        content: "''";
+        height: 100%;
+        /*position: absolute;*/
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .box{
+        background-color: white;
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <div>
+        test
+    </div>
+
+    <div class="container">
+      <div class="box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+      aperiam quidem minima a qui ipsa deleniti nisi modi nesciunt
+      dolores, consequatur dolorem, dignissimos debitis distinctio.
+      Voluptas eligendi fuga voluptatem eos.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+      aperiam quidem minima a qui ipsa deleniti nisi modi nesciunt
+      dolores, consequatur dolorem, dignissimos debitis distinctio.
+      Voluptas eligendi fuga voluptatem eos.
+      </div>
+  </div>
+
+
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>
